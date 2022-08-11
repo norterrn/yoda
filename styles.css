@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lobster;
+}
+
+:root{
+    --primary-color:rgb(184, 126, 184);
+}
+/*-------------------------------Setting up the body, display: flex; etc. */
+body{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+/* -------------------------   Set up the nav bar, logo and hamburger icon*/
+#logo{
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+.mobile-menu{
+    width: 35px;
+    margin-right: 40px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/*    
+    Tried to hide here the nav bar to make it a mobile devices exclusive
+*/
+nav{
+    display: flex;
+    flex: 0 1 basis;
+    width: 100%;
+    justify-content: space-between;
+    background-color: gainsboro;
+}
+
+nav ul{
+    display: none;
+    list-style: none;
+}
+/*----------------------------------------------------------------*/
+.layer-1{
+    background-color: gainsboro;
+    color: var(--primary-color);
+    padding: 30px 1em 0 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.l1-img{
+    display: inline-block;
+    margin: 20px;   
+    border: 9px double var(--primary-color); 
+    border-radius: 99px;
+}
+
+.l1-info{
+    display: flex;
+    flex-direction: column;
+}
+h1 span{
+    color: black;
+}
+
+/* --------------------------------- Here's the btn function to grab*/
+.btn{
+    font-size: 2em;
+    font-weight: 500;
+    border-radius: 99px;
+    width: 150px;
+    height: 50px;
+    margin: 35px auto 0 auto;
+    cursor:grab;
+    position: relative;
+    z-index: 100;
+}
+.btn:hover{
+    margin-top: 30px;
+    margin-bottom: -5px;
+    transition-duration: 0.3s;
+    height: 60px;
+    width: 160px;
+}
+.btn:not(:hover){
+ transition-duration: 0.3s;
+}
+.btn:active{
+    cursor: grabbing;
+    color: var(--primary-color);
+    background-color: whitesmoke;
+}
+/*---------------------------------- Just a blocker to separate the page*/
+
+.blocker {
+    width: 100%;
+    background-color: darkslategray;
+    height: 2em;
+}
+
+/*--------------------------------------------Layer 2, background img*/
+
