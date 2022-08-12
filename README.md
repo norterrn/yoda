@@ -1,2 +1,2 @@
 # yoda
-A website about about my cat
+A website about my cat
