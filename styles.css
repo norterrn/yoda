@@ -87,9 +87,9 @@ ul li {
 }
 
 .l1-img {
-  display: inline-block;
+  display: block;
+  flex-shrink: 0;
   margin: 20px;
-  height: 100%;
   border: 9px double var(--primary-color);
   border-radius: 99px;
 }
