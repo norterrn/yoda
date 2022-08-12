@@ -1,268 +1,307 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Lobster;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lobster;
 }
 
-:root{
-    --primary-color:rgb(184, 126, 184);
+:root {
+  --primary-color: rgb(184, 126, 184);
 }
 /*-------------------------------Setting up the body, display: flex; etc. */
-body{
-    display: flex;
-    flex-direction: column;
+body {
+  display: flex;
+  flex-direction: column;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 /* -------------------   Set up the nav bar, logo and hamburger icon for mobile version*/
-#logo{
-    height: 70px;
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    border-radius: 50px;
+#logo {
+  height: 70px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 50px;
 }
 
-.mobile-menu{
-    width: 35px;
-    margin-right: 20px;
-    margin-top: 50px;
-    right: 0;
-    cursor: pointer;
-    margin-bottom: auto;
-    z-index: 999;
+.mobile-menu {
+  width: 35px;
+  margin-right: 20px;
+  margin-top: 50px;
+  right: 0;
+  cursor: pointer;
+  margin-bottom: auto;
+  z-index: 999;
 }
 
-.mobile-menu:hover{
-    cursor: pointer;
+.mobile-menu:hover {
+  cursor: pointer;
 }
 
 /*    
     Tried to hide here the nav bar to make it a mobile devices exclusive
 */
-nav{
-    display: flex;
-    flex: 0 1 basis;
-    width: 100%;
-    justify-content: space-between;
-    background-color: gainsboro;
+nav {
+  display: flex;
+  flex: 0 1 basis;
+  width: 100%;
+  justify-content: space-between;
+  background-color: gainsboro;
 }
 
-nav ul{
-    display: none;
-    position: fixed;
-    list-style: none;
-    z-index: 998;
-    background-color: #222930c9;
-    width: 66%;
-    font-size: 2em;
-    right: 0;
-    height: 100vh;
-    padding: 1em;
-    padding-top: 4em;
-
-    
+nav ul {
+  display: none;
+  position: fixed;
+  list-style: none;
+  z-index: 998;
+  background-color: #222930c9;
+  width: 66%;
+  font-size: 2em;
+  right: 0;
+  height: 100vh;
+  padding: 1em;
+  padding-top: 4em;
 }
-a{ 
-    color: white;
-    padding: 0.5em;
-    font-size: 1.3em;
-    text-align: right;
+a {
+  color: white;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
 }
 
-ul li{
-    list-style: none;
+ul li {
+  list-style: none;
 }
-
-
 
 /*---------------------------------------------------------------- Layer 1*/
-.layer-1{
-    background-color: gainsboro;
-    color: var(--primary-color);
-    padding: 30px 1em 0 1em;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+.layer-1 {
+  background-color: gainsboro;
+  color: var(--primary-color);
+  padding: 30px 1em 0 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.l1-img{
-    display: inline-block;
-    margin: 20px;   
-    border: 9px double var(--primary-color); 
-    border-radius: 99px;
+.l1-img {
+  display: inline-block;
+  margin: 20px;
+  border: 9px double var(--primary-color);
+  border-radius: 99px;
 }
 
-.l1-info{
-    display: flex;
-    flex-direction: column;
+.l1-info {
+  display: flex;
+  flex-direction: column;
 }
-h1 span{
-    color: black;
+h1 span {
+  color: black;
 }
 
 /* --------------------------------- Here's the btn function to grab*/
-.btn{
-    font-size: 2em;
-    font-weight: 500;
-    border-radius: 99px;
-    width: 150px;
-    height: 50px;
-    margin: 35px auto 0 auto;
-    cursor:grab;
-    position: relative;
-    z-index: 100;
+.btn {
+  font-size: 2em;
+  font-weight: 500;
+  border-radius: 99px;
+  width: 150px;
+  height: 50px;
+  margin: 35px auto 0 auto;
+  cursor: grab;
+  position: relative;
+  z-index: 100;
 }
-.btn:hover{
-    margin-top: 30px;
-    margin-bottom: -5px;
-    transition-duration: 0.3s;
-    height: 60px;
-    width: 159px;
+.btn:hover {
+  margin-top: 30px;
+  margin-bottom: -5px;
+  transition-duration: 0.3s;
+  height: 60px;
+  width: 159px;
 }
-.btn:not(:hover){
- transition-duration: 0.3s;
+.btn:not(:hover) {
+  transition-duration: 0.3s;
 }
-.btn:active{
-    cursor: grabbing;
-    color: var(--primary-color);
-    background-color: whitesmoke;
+.btn:active {
+  cursor: grabbing;
+  color: var(--primary-color);
+  background-color: whitesmoke;
 }
 /*---------------------------------- Just a blocker to separate the page in 3-4 parts*/
 
 .blocker {
-    position: relative;
-    width: 100%;
-    background-color: darkslategray;
-    height: 2em;
+  position: relative;
+  width: 100%;
+  background-color: darkslategray;
+  height: 2em;
 }
 
 /*--------------------------------------------Layer 2, background img, fonts borders of files etc.*/
 
-.layer-2{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    background-color: gainsboro;
+.layer-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background-color: gainsboro;
 }
 
-.fun-facts{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.fun-facts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.square-bg{
-    width: 330px;
-    border: 9px double var(--primary-color); 
-    border-radius: 99px;
-    margin-left: -45px;
+.square-bg {
+  width: 330px;
+  border: 9px double var(--primary-color);
+  border-radius: 99px;
+  margin-left: -45px;
 }
 
-.square-1, 
-.square-2, 
-.square-3, 
+.square-1,
+.square-2,
+.square-3,
 .square-4 {
-    width: 240px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.5em;
-} 
+  width: 240px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+}
 
 /* --------------------------------- Layer 3, the comment with signature, darker bg*/
 
 .layer-3 {
-    display: flex;
-    background-color: rgba( 87, 93, 94, 0.50);
-    flex-direction: column;
-    padding:20px;
-    padding-bottom: 10px;
-    
+  display: flex;
+  background-color: rgba(87, 93, 94, 0.5);
+  flex-direction: column;
+  padding: 20px;
+  padding-bottom: 10px;
 }
 
-.layer-3 h2{
-    align-self: flex-end;
+.layer-3 h2 {
+  align-self: flex-end;
 }
 
 /* ------------------------------------     layer 4 + container with button   */
 
-.container{
-    background-color: gainsboro;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+.container {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.cont-part1{
-    text-align: center;
+.cont-part1 {
+  text-align: center;
 }
 
-.cont-part2{
-    display: flex;
+.cont-part2 {
+  display: flex;
 }
 
 /* ----------------------------   footer */
 
 .footer {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 30px;
 }
 
 /* ----------------------------------------------------  SCREEN VERSION -------------------*/
 
 @media only screen and (min-width: 768px) {
-    
+  /*--------------------------- header */
 
-/*--------------------------- header */
+  .mobile-menu {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: unset;
+    margin-right: 2em;
+    padding: 0;
+    height: auto;
+    background-color: #dcdcdc;
+    font-size: 1em;
+  }
 
-    .mobile-menu{
-        display: none;
-    }
-    nav ul {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        position: unset;
-        margin-right: 2em;
-        padding:0;
-        height: auto;
-        background-color: #DCDCDC;
-        font-size: 1em;
-    }
-   
-    .big-screen{
-        display: flex;
-        justify-content: space-between;
-        
-    }
+  .big-screen {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  /*-------------------------------------- Setting up layer 1*/
 
-/*-------------------------- Setting up layer 1*/
-
-        .layer-1{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-        }
-        .l1-info{
-
-        }
-        .l1-img{
-            min-width: 400px;
-            max-height: 400px;
-        }
+  .layer-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .l1-info {
+  }
+  .l1-img {
+    min-width: 400px;
+    max-height: 400px;
+  }
 }
 
-@media only screen and (min-width: 1080px){
+@media only screen and (min-width: 1080px) {
+  nav ul a {
+    color: lightslategrey;
+    font-size: 2.5em;
+  }
+  .big-screen {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2em;
+  }
 
-    
+  .layer-1 {
+    font-size: 1.7em;
+  }
+  .btn {
+    width: 200px;
+    height: 75px;
+  }
+
+  .btn:hover {
+    margin-top: 30px;
+    margin-bottom: -5px;
+    transition-duration: 0.3s;
+    height: 85px;
+    width: 219px;
+  }
+  .btn:not(:hover) {
+    transition-duration: 0.3s;
+  }
+
+  .blocker {
+    position: relative;
+    width: 100%;
+    background-color: darkslategray;
+    height: 4.5em;
+  }
+
+  .layer-2 {
+    font-size: 1.5em;
+  }
+
+  .fun-facts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .layer-3 {
+    font-size: 2em;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
