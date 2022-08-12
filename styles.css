@@ -88,8 +88,8 @@ ul li {
 
 .l1-img {
   display: inline-block;
-  height: 100%;
   margin: 20px;
+  height: 100%;
   border: 9px double var(--primary-color);
   border-radius: 99px;
 }
