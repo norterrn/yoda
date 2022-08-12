@@ -18,7 +18,7 @@ body{
 a{
     text-decoration: none;
 }
-/* -------------------------   Set up the nav bar, logo and hamburger icon*/
+/* -------------------   Set up the nav bar, logo and hamburger icon for mobile version*/
 #logo{
     height: 70px;
     margin-top: 15px;
@@ -29,11 +29,18 @@ a{
 
 .mobile-menu{
     width: 35px;
-    margin-right: 40px;
+    margin-right: 20px;
+    margin-top: 50px;
+    right: 0;
     cursor: pointer;
-    margin-top: auto;
     margin-bottom: auto;
+    z-index: 999;
 }
+
+.mobile-menu:hover{
+    cursor: pointer;
+}
+
 /*    
     Tried to hide here the nav bar to make it a mobile devices exclusive
 */
@@ -45,11 +52,35 @@ nav{
     background-color: gainsboro;
 }
 
-nav ul, ul{
+nav ul{
     display: none;
+    position: fixed;
+    list-style: none;
+    z-index: 998;
+    background-color: #222930c9;
+    width: 66%;
+    font-size: 2em;
+    right: 0;
+    height: 100vh;
+    padding: 1em;
+    padding-top: 4em;
+
+    
+}
+a{ 
+    color: white;
+    padding: 0.5em;
+    font-size: 1.3em;
+    text-align: right;
+}
+
+ul li{
     list-style: none;
 }
-/*----------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------- Layer 1*/
 .layer-1{
     background-color: gainsboro;
     color: var(--primary-color);
@@ -128,9 +159,10 @@ h1 span{
 }
 
 .square-bg{
-    width: 250px;
+    width: 330px;
     border: 9px double var(--primary-color); 
     border-radius: 99px;
+    margin-left: -45px;
 }
 
 .square-1, 
@@ -139,6 +171,8 @@ h1 span{
 .square-4 {
     width: 240px;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.5em;
 } 
 
@@ -148,9 +182,8 @@ h1 span{
     display: flex;
     background-color: rgba( 87, 93, 94, 0.50);
     flex-direction: column;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding:20px;
+    padding-bottom: 10px;
     
 }
 
@@ -158,4 +191,29 @@ h1 span{
     align-self: flex-end;
 }
 
-/* ------------------------------------        */
+/* ------------------------------------     layer 4 + container with button   */
+
+.container{
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.cont-part1{
+    text-align: center;
+}
+
+.cont-part2{
+    display: flex;
+}
+
+/* ----------------------------   footer */
+
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+
