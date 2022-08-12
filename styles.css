@@ -45,7 +45,7 @@ nav{
     background-color: gainsboro;
 }
 
-nav ul{
+nav ul, ul{
     display: none;
     list-style: none;
 }
@@ -91,7 +91,7 @@ h1 span{
     margin-bottom: -5px;
     transition-duration: 0.3s;
     height: 60px;
-    width: 160px;
+    width: 159px;
 }
 .btn:not(:hover){
  transition-duration: 0.3s;
@@ -101,13 +101,61 @@ h1 span{
     color: var(--primary-color);
     background-color: whitesmoke;
 }
-/*---------------------------------- Just a blocker to separate the page*/
+/*---------------------------------- Just a blocker to separate the page in 3-4 parts*/
 
 .blocker {
+    position: relative;
     width: 100%;
     background-color: darkslategray;
     height: 2em;
 }
 
-/*--------------------------------------------Layer 2, background img*/
+/*--------------------------------------------Layer 2, background img, fonts borders of files etc.*/
 
+.layer-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: gainsboro;
+}
+
+.fun-facts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.square-bg{
+    width: 250px;
+    border: 9px double var(--primary-color); 
+    border-radius: 99px;
+}
+
+.square-1, 
+.square-2, 
+.square-3, 
+.square-4 {
+    width: 240px;
+    margin-top: 10px;
+    font-size: 1.5em;
+} 
+
+/* --------------------------------- Layer 3, the comment with signature, darker bg*/
+
+.layer-3 {
+    display: flex;
+    background-color: rgba( 87, 93, 94, 0.50);
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.layer-3 h2{
+    align-self: flex-end;
+}
+
+/* ------------------------------------        */
